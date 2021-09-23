@@ -18,13 +18,14 @@ console.log(location,token)
 this.props.confirmUserEntity(token).then(
 	()=>{
   this.success()
- 
+  
   console.log("test",this.state)
 	})
 	}
+	
 	handleSubmit(){
-		
-		this.props.history.push("/login");
+		window.open("/login") 
+		//this.props.history.push("/login");
 		
 	}
 	success(){
@@ -32,7 +33,7 @@ this.props.confirmUserEntity(token).then(
 		const users=allusers.payload;
 		
 		console.log(allusers.type)
-		if(allusers.type=="CONFIRM_USER_ENTITY"){
+		if(allusers.type==="CONFIRM_USER_ENTITY"){
 		
 			var message= allusers.payload.message;
 			console.log(message)
@@ -41,7 +42,6 @@ this.props.confirmUserEntity(token).then(
 				show:true
 			}
 			)
-			
 	}
 	}
 	render() {
@@ -49,13 +49,15 @@ this.props.confirmUserEntity(token).then(
 			 <div className="center">
 			 <div className="text-center">
 			 
-			 <form className="form-signin" onSubmit={this.handleSubmit}>
+		
 			 <h2 className="h3 mb-3 font-weight-normal"><div show={this.state.show}>
 				 {this.state.message}
 			 </div></h2>
 			 <br/>	
-			   <button className="btn btn-primary" to="/login" >Login</button>
-			 </form>
+			 <div>
+			   <button className="btn btn-primary" onClick={this.handleSubmit} >Login</button>
+			</div>
+			 
 		
 			 </div>
 		   </div>

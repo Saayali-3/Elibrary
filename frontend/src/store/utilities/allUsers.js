@@ -65,6 +65,7 @@ export const fetchAllUsersThunk = () => (dispatch) => {
 
 export const addUserThunk = (user, ownProps) => (dispatch) => {
 console.log(user)
+
   return axios
     .post("http://localhost:8080/register", user)
     .then((res) => res.data)
@@ -76,9 +77,10 @@ console.log(user)
     .catch((err) => console.log(err));
 };
 
-export const editUserThunk = (id, user) => (dispatch) => {
+export const editUserThunk = (user) => (dispatch) => {
+  console.log(user);
   return axios
-    .put(`http://localhost:8080/candidates`, user)
+    .put(`http://localhost:8080/updateuser`, user)
     .then((res) => res.data)
     .then((updatedUser) => {
       dispatch(editUser(updatedUser));
@@ -134,7 +136,7 @@ const reducer = (state = [], action) => {
       return [...state, action.payload];
     case EDIT_USER:
       return state.map((user) =>
-        user.id === action.payload.id ? action.payload : user
+        user.id === action.payload.id ? action : user
       );
     case ADD_USER_ENTITY:
       return action;

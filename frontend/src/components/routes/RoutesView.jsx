@@ -9,7 +9,7 @@ import {
   
 } from "../containers";
 import { VerificationView,
-  ConfirmAccountView,HomePageView } from "../views";
+  ConfirmAccountView,HomePageView ,ApproveView} from "../views";
 
 const RoutesView = () => {
   return (
@@ -19,7 +19,7 @@ const RoutesView = () => {
       <Route exact path="/verification" component={VerificationView} />
       <Route exact path="/home" component={HomePageView} />
       <Route exact path="/confirm-account" component={ConfirmAccountView} />
-    
+      <Route exact path="/approve" component={ApproveView} />
       <Route exact path="/" component={LoginFormContainer} />
       <Route exact path="/users/:id" component={UserContainer} />
     
