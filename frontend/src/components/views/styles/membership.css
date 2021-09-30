@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+.columns
+{
+    background-color: rgb(168, 240, 198);
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+}
+.usernameDisplay{
+  float: right;
+  margin-left: 690px;
+}
+.price {
+    list-style-type: none;
+    border: 1px solid rgb(255, 194, 252);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    font-weight:bold;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 5px 123px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 27px;
+    
+  }

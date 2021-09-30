@@ -1,0 +1,75 @@
+.register {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn btn-secondary{
+    background: #55e7d4;
+    border-radius: 2px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #f087ea;
+    color: #111;
+    cursor: pointer;
+  }
+  .login__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .register__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(248, 248, 248, 0.795);
+    border: 1px solid lightgray;
+    padding: 20px;
+  }
+  
+  .register__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .register__container > form > h5 {
+    margin-bottom: 5px;
+  }
+  
+  .register__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+  }
+  
+  .register__address {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+  }
+  
+  .register__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  
+  .register__signUpButton {
+    width: 100%;
+    height: 30px;
+    background: #55e7d4;
+    border-radius: 2px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #55e7d4;
+    color: #111;
+    cursor: pointer;
+  }
